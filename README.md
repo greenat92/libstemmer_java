@@ -14,7 +14,7 @@ Simply run the java compiler on all the java source files under the java
 directory.  For example, this can be done under unix by changing directory into
 the java directory, and running:
 
- javac org/tartarus/snowball/*.java org/tartarus/snowball/ext/*.java
+ `javac org/tartarus/snowball/*.java org/tartarus/snowball/ext/*.java `
 
 This will compile the library and also an example program "TestApp" which
 provides a command line interface to the library.
@@ -38,3 +38,12 @@ The TestApp example program allows you to run any of the stemmers
 compiled into the libstemmer library on a sample vocabulary.  For
 details on how to use it, run it with no command line parameters.
 
+Test Arabic Stemmer Algorithm 
+=============================
+
+Compile and run :  
+
+         -1 `cd libstemmer_java/java`
+         -2 `javac TestArabicStemmer.java`
+         -3  `java TestArabicStemmer` // in this file i used العربية as input
+         -4  output : `عرب`
